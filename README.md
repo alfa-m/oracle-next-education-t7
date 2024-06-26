@@ -1,2 +1,2 @@
-# oracle-next-education-t7
-Projetos desenvolvidos durante o Oracle Next Education, Turma 7
+# Oracle Next Education
+Projetos desenvolvidos durante o [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/), Turma 7
