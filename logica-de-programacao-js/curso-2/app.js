@@ -11,6 +11,7 @@ function alterarHtml(tag, texto) {
 }
 
 function gerarNumeroAleatorio() {
+  //return parseInt(Math.random() * limite + 1);
   return parseInt(Math.random() * 10 + 1);
 }
 
@@ -54,4 +55,5 @@ let botao = document.querySelector("#reiniciar");
 botao.disabled = true;
 
 alterarHtml("h1", "Jogo do número secreto");
+//alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e ${limite}`);
 alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e 10`);
