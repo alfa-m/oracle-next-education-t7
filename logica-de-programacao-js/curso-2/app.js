@@ -21,6 +21,7 @@ function verificarChute() {
   if (chute == numeroSecreto) {
     // botao.disabled = false funciona igual a botao.removeAttribute('disabled')
     botao.disabled = false;
+    alterarHtml("#instrucao_jogo", "");
     alterarHtml(
       "#dica_jogo",
       `Você acertou o número secreto (${numeroSecreto}) em ${tentativa} ${tentativaPalavra}`
@@ -40,9 +41,17 @@ function limparCampo() {
   document.querySelector("input").value = "";
 }
 
+function exibirMensagemInicial() {
+  alterarHtml("h1", "Jogo do número secreto");
+  //alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e ${limite}`);
+  alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e 10`);
+}
+
 function reiniciarJogo() {
+  exibirMensagemInicial();
   limparCampo();
   alterarHtml("#dica_jogo", "");
+  // botao.disabled = true funciona igual a botao.setAttribute('disabled', true)
   botao.disabled = true;
   numeroSecreto = gerarNumeroAleatorio();
   tentativa = 1;
@@ -53,7 +62,4 @@ let numeroSecreto = gerarNumeroAleatorio();
 let tentativa = 1;
 let botao = document.querySelector("#reiniciar");
 botao.disabled = true;
-
-alterarHtml("h1", "Jogo do número secreto");
-//alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e ${limite}`);
-alterarHtml("#instrucao_jogo", `Escolha um número entre 1 e 10`);
+exibirMensagemInicial();
