@@ -23,6 +23,7 @@ function verificarChute() {
       `Você acertou o número secreto (${numeroSecreto}) em ${tentativa} ${tentativaPalavra}`
     );
   } else {
+    limparCampo();
     if (chute < numeroSecreto) {
       alterarHtml("#dica_jogo", `O número secreto é maior que ${chute}`);
     } else {
@@ -32,8 +33,12 @@ function verificarChute() {
   tentativa++;
 }
 
-function reiniciarJogo() {
+function limparCampo() {
   document.querySelector("input").value = "";
+}
+
+function reiniciarJogo() {
+  limparCampo();
   alterarHtml("#dica_jogo", "");
   botao.disabled = true;
   numeroSecreto = gerarNumeroAleatorio();
