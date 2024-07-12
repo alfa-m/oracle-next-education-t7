@@ -4,6 +4,7 @@
 //let paragrafo = document.querySelector("p");
 //paragrafo.innerHTML = "Escolha um número entre 1 e 10";
 
+// document.querySelector(#id) funciona igual a document.getElementById(id)
 function alterarHtml(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
@@ -17,6 +18,7 @@ function verificarChute() {
   let chute = document.querySelector("input").value;
   let tentativaPalavra = tentativa > 1 ? "tentativas" : "tentativa";
   if (chute == numeroSecreto) {
+    // botao.disabled = false funciona igual a botao.removeAttribute('disabled')
     botao.disabled = false;
     alterarHtml(
       "#dica_jogo",
