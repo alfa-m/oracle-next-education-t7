@@ -4,8 +4,8 @@
 //let paragrafo = document.querySelector("p");
 //paragrafo.innerHTML = "Escolha um número entre 1 e 10";
 
-// document.querySelector(#id) funciona igual a document.getElementById(id)
 function alterarHtml(tag, texto) {
+  // document.querySelector(#id) funciona igual a document.getElementById(id)
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
 }
