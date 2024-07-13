@@ -6,4 +6,9 @@ Projetos desenvolvidos durante o [Oracle Next Education](https://www.oracle.com/
 
 ## Conteúdo
 
-- [Lógica de programação](./logica_de_programacao_js/)
+- Iniciação em programação
+  - [Lógica de programação](./logica_de_programacao_js/)
+  - [ChatGPT]
+  - [HTML e CSS]
+  - [Git e GitHub]
+  - [Challenge de Iniciante em programação]
