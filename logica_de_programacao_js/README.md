@@ -14,4 +14,7 @@ Essa pasta contém os projetos realizados durante os seguintes cursos:
   - [Desafio 4: Boas práticas de programação](./curso_1/desafio_4/)
 - [Lógica de programação: explore funções e listas (Alura)](https://www.alura.com.br/curso-online-logica-programacao-funcoes-listas)
   - [Projeto principal: Jogo do número secreto 2.0](./curso_2/projeto_principal/)
-  - [Desafio 1](./curso_2/desafio_1/)
+  - [Desafio 1: Interagindo com HTML](./curso_2/desafio_1/)
+  - [Desafio 2: Funções](./curso_2/desafio_2/)
+  - [Desafio 3: Reiniciando o jogo](./curso_2/desafio_3/)
+  - [Desafio 4: Listas](./curso_2/desafio_4/)
