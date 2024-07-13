@@ -6,4 +6,4 @@ Projetos desenvolvidos durante o [Oracle Next Education](https://www.oracle.com/
 
 ## Conteúdo
 
-- [Lógica de programação](./logica-de-programacao-js/)
+- [Lógica de programação](./logica_de_programacao_js/)
