@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Desafio: Iniciando com JavaScript</title>
   </head>
-  <body>
-    <header>
-      <h1></h1>
-    </header>
-    <main class="container">
-      <button onclick="mensagemConsole()" class="button">Console</button>
-      <button onclick="mensagemAlerta()" class="button">Alert</button>
-      <button onclick="mensagemPrompt()" class="button">Prompt</button>
-      <button onclick="calculaSoma()" class="button">Soma</button>
-    </main>
 
-    <script src="app.js"></script>
+  <body>
+    <h1>Desafio: Iniciando com JavaScript</h1>
+    <p>
+      Tarefas:
+      <ol>
+        <li>Mostre um alerta com a mensagem "Boas vindas ao nosso site!".</li>
+        <li>Declare uma variável chamada nome e atribua a ela o valor "Lua".</li>
+        <li>Crie uma variável chamada idade e atribua a ela o valor 25.</li>
+        <li>Defina uma variável numeroDeVendas e atribua a ela o valor 50.</li>
+        <li>Defina uma variável saldoDisponivel e atribua a ela o valor 1000.</li>
+        <li>Exiba um alerta com o texto "Erro! Preencha todos os campos".</li>
+        <li>Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos". Agora exiba um alerta com o valor da variável mensagemDeErro.</li>
+        <li>Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.</li>
+        <li>Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.</li>
+        <li>Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".</li>
+    </ol>
+    </p>
+    <script src="app.js" defer></script>
   </body>
 </html>
