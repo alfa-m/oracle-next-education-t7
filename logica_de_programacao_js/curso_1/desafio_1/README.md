@@ -20,4 +20,4 @@ Desafios:
 
 9. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
 
-10.Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
+10. Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
