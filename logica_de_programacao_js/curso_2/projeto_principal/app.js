@@ -26,7 +26,7 @@ function gerarNumeroAleatorio() {
   let numeroAleatorio = parseInt(Math.random() * 10 + 1);
 
   if (ultimosTresNumerosSecretos.length == 3) {
-    ultimosTresNumerosSecretos = [];
+    ultimosTresNumerosSecretos.shift();
   }
 
   if (ultimosTresNumerosSecretos.includes(numeroAleatorio)) {
