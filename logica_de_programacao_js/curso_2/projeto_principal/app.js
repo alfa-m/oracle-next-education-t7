@@ -1,3 +1,13 @@
+let ultimosTresNumerosSecretos = [];
+//let limite = prompt("Insira o número máximo");
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativa = 1;
+let botaoIniciar = document.querySelector("#chutar");
+botaoIniciar.disabled = false;
+let botaoReiniciar = document.querySelector("#reiniciar");
+botaoReiniciar.disabled = true;
+exibirMensagemInicial();
+
 //let titulo = document.querySelector("h1");
 //titulo.innerHTML = "Jogo do número secreto";
 
@@ -8,23 +18,37 @@ function alterarHtml(tag, texto) {
   // document.querySelector(#id) funciona igual a document.getElementById(id)
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
+  responsiveVoice.speak(texto, "Brazilian Portuguese Female", { rate: 1.3 });
 }
 
 function gerarNumeroAleatorio() {
-  //return parseInt(Math.random() * limite + 1);
-  return parseInt(Math.random() * 10 + 1);
+  // let numeroAleatorio = parseInt(Math.random() * limite + 1);
+  let numeroAleatorio = parseInt(Math.random() * 10 + 1);
+
+  if (ultimosTresNumerosSecretos.length == 3) {
+    ultimosTresNumerosSecretos = [];
+  }
+
+  if (ultimosTresNumerosSecretos.includes(numeroAleatorio)) {
+    return gerarNumeroAleatorio();
+  } else {
+    ultimosTresNumerosSecretos.push(numeroAleatorio);
+    return numeroAleatorio;
+  }
 }
 
 function verificarChute() {
   let chute = document.querySelector("input").value;
   let tentativaPalavra = tentativa > 1 ? "tentativas" : "tentativa";
   if (chute == numeroSecreto) {
-    // botao.disabled = false funciona igual a botao.removeAttribute('disabled')
-    botao.disabled = false;
+    botaoIniciar.disabled = true;
+    // botaoReiniciar.disabled = false funciona igual a botaoReiniciar.removeAttribute('disabled')
+    botaoReiniciar.disabled = false;
+    alterarHtml("h1", "Acertou!");
     alterarHtml("#instrucao_jogo", "");
     alterarHtml(
       "#dica_jogo",
-      `Você acertou o número secreto (${numeroSecreto}) em ${tentativa} ${tentativaPalavra}`
+      `Você acertou o número secreto em ${tentativa} ${tentativaPalavra}`
     );
   } else {
     limparCampo();
@@ -51,15 +75,9 @@ function reiniciarJogo() {
   exibirMensagemInicial();
   limparCampo();
   alterarHtml("#dica_jogo", "");
-  // botao.disabled = true funciona igual a botao.setAttribute('disabled', true)
-  botao.disabled = true;
+  botaoIniciar.disabled = false;
+  // botaoReiniciar.disabled = true funciona igual a botaoReiniciar.setAttribute('disabled', true)
+  botaoReiniciar.disabled = true;
   numeroSecreto = gerarNumeroAleatorio();
   tentativa = 1;
 }
-
-//let limite = prompt("Insira o número máximo");
-let numeroSecreto = gerarNumeroAleatorio();
-let tentativa = 1;
-let botao = document.querySelector("#reiniciar");
-botao.disabled = true;
-exibirMensagemInicial();
