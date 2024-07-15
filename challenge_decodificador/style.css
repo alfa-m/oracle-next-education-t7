@@ -1,18 +1,36 @@
+/* CONFIGURAÇÕES BÁSICAS */
+:root {
+  --decodificador-main-color: #0a3871;
+  --decodificador-second-color: #f3f5fc;
+
+  --not-white: #fefefe;
+  --not-black: #080808;
+}
+
 body {
-  background-color: #f3f5fc;
+  font-family: "Inter", "Courier";
+  background-color: var(--decodificador-second-color);
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 1080px;
+  height: 720px;
+  margin: 0%;
 }
 
 button {
-  border-color: #0a3871;
-  background-color: #0a3871;
-  color: #ffffff;
-  width: 328px;
-  height: 67px;
-  border-radius: 24px;
+  border-color: var(--decodificador-main-color);
+  background-color: var(--decodificador-second-color);
+  color: var(--decodificador-main-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: var(--decodificador-main-color);
+  color: var(--not-white);
 }
 
 #area_principal {
@@ -21,15 +39,23 @@ button {
   justify-content: space-around;
   align-items: center;
   width: 400px;
-  height: 800px;
-  padding: 10px;
+  height: 700px;
+}
+
+#imagem_procurando_texto {
+  width: 30%;
+  height: 20%;
 }
 
 #saida_decodificacao {
-  background-color: #ffffff;
+  background-color: var(--not-white);
   width: 400px;
-  height: 500px;
-  padding: 10px;
+  height: 3cqw;
   border-radius: 32px;
   border-width: 64px;
+  padding: 3%;
+}
+
+footer {
+  height: 5%;
 }

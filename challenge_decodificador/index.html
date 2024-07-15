@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Decodificador de palavras</title>
   </head>
   <body>
@@ -29,14 +34,15 @@
       </div>
     </div>
     <div id="area_decodificador">
-      <!--img
+      <p id="saida_decodificacao"></p>
+      <img
+        id="imagem_procurando_texto"
         src="./img/pessoa_com_lupa.svg"
         alt="Pessoa segurando uma lupa e observando um diamante"
-      /-->
-      <p id="saida_decodificacao"></p>
+      />
       <button id="botao_copiar" onclick="copiaTexto()">Copiar</button>
     </div>
-    <!--footer>Criado por Alfa Marine - 2024.</footer-->
+    <footer>Criado por Alfa Marine - 2024.</footer>
     <script src="./app.js" defer></script>
   </body>
 </html>
