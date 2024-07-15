@@ -1,19 +1,35 @@
 body {
   background-color: #f3f5fc;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 button {
   border-color: #0a3871;
   background-color: #0a3871;
   color: #ffffff;
-  width: 32.8vw;
-  height: 6.7vh;
-  border-radius: 24vh;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+}
+
+#area_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  padding: 10px;
 }
 
 #saida_decodificacao {
   background-color: #ffffff;
-  width: 40vw;
-  height: 94.4vh;
-  justify-content: center;
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 32px;
+  border-width: 64px;
 }
