@@ -1,4 +1,19 @@
+body {
+  background-color: #f3f5fc;
+}
+
 button {
-  background-color: blueviolet;
-  color: antiquewhite;
+  border-color: #0a3871;
+  background-color: #0a3871;
+  color: #ffffff;
+  width: 32.8vw;
+  height: 6.7vh;
+  border-radius: 24vh;
+}
+
+#saida_decodificacao {
+  background-color: #ffffff;
+  width: 40vw;
+  height: 94.4vh;
+  justify-content: center;
 }
