@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de palavras</title>
+  </head>
+  <body>
+    <header></header>
+    <div id="area_principal">
+      <div id="secao_texto">
+        <textarea
+          id="entrada_decodificacao"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <p id="texto_validacao">
+          Atenção: Digite apenas com letras minúsculas e sem acentuação!
+        </p>
+      </div>
+      <div id="secao_botoes">
+        <button id="botao_criptografar" onclick="criptografa()">
+          Criptografar
+        </button>
+        <button id="botao_descriptografar" onclick="descriptografa()">
+          Descriptografar
+        </button>
+      </div>
+    </div>
+    <div id="area_decodificador">
+      <img
+        src="./img/pessoa_com_lupa.svg"
+        alt="Pessoa segurando uma lupa e observando um diamante"
+      />
+      <p id="saida_decodificacao"></p>
+      <button id="botao_copiar" onclick="copiaTexto()">Copiar</button>
+    </div>
+    <footer>Criado por Alfa Marine - 2024.</footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
