@@ -11,4 +11,4 @@ Projetos desenvolvidos durante o [Oracle Next Education](https://www.oracle.com/
   - [ChatGPT]
   - [HTML e CSS]
   - [Git e GitHub]
-  - [Challenge de Iniciante em programação]
+  - [Challenge de Iniciante em programação](./challenge_decodificador/)
