@@ -1,6 +1,5 @@
 function criptografa() {
   let textoEntrada = document.querySelector("#entrada_decodificacao").value;
-  console.log(textoEntrada);
   let textoSaida = [];
   for (let i in textoEntrada) {
     let letra = textoEntrada[i];
@@ -36,7 +35,6 @@ function criptografa() {
 
 function descriptografa() {
   let textoEntrada = document.querySelector("#entrada_decodificacao").value;
-  console.log(textoEntrada);
   let textoSaida = textoEntrada.replaceAll("ai", "a");
   textoSaida = textoSaida.replaceAll("enter", "e");
   textoSaida = textoSaida.replaceAll("imes", "i");
