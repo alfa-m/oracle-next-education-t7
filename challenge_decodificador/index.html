@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,38 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Decodificador de palavras</title>
+    <title>Decodificador de texto</title>
   </head>
   <body>
-    <header></header>
-    <div id="area_principal">
-      <div id="secao_texto">
-        <textarea
-          id="entrada_decodificacao"
-          placeholder="Digite seu texto"
-        ></textarea>
-        <p id="texto_validacao">
-          Atenção: Digite apenas com letras minúsculas e sem acentuação!
-        </p>
-      </div>
-      <div id="secao_botoes">
-        <button id="botao_criptografar" onclick="criptografa()">
-          Criptografar
-        </button>
-        <button id="botao_descriptografar" onclick="descriptografa()">
-          Descriptografar
-        </button>
-      </div>
-    </div>
-    <div id="area_decodificador">
+    <header>
+      <p>
+        <a href="https://www.alura.com.br/">Alura Latam</a> +
+        <a href="https://www.oracle.com/br/education/oracle-next-education/"
+          >Oracle Next Education</a
+        >
+      </p>
+    </header>
+    <main>
+      <h1>Challenge de Iniciante em Programação: Decodificador de texto</h1>
+      <textarea
+        id="entrada_decodificacao"
+        placeholder="Digite seu texto"
+      ></textarea>
+      <p id="texto_alerta">
+        Atenção: Digite apenas com letras minúsculas e sem acentuação!
+      </p>
+      <button id="botao_criptografar" onclick="criptografa()">
+        Criptografar
+      </button>
+      <button id="botao_descriptografar" onclick="descriptografa()">
+        Descriptografar
+      </button>
       <p id="saida_decodificacao"></p>
       <img
         id="imagem_procurando_texto"
         src="./img/pessoa_com_lupa.svg"
-        alt="Pessoa segurando uma lupa e observando um diamante"
+        alt="Pessoa segurando uma lupa e observando um diamante flutuando no ar"
       />
       <button id="botao_copiar" onclick="copiaTexto()">Copiar</button>
-    </div>
+    </main>
     <footer>Criado por Alfa Marine - 2024.</footer>
     <script src="./app.js" defer></script>
   </body>
