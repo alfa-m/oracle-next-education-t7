@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --cor-primaria: #0a3871;
+  --cor-secundaria: #d8dfe8;
+  --cor-terciaria: #e5e5e5;
+
+  --cor-clara: #fefefe;
+  --cor-escura: #080808;
+
+  --fonte: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--fonte);
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-secundaria);
+  height: 90%;
+  max-width: 100%;
+  padding: 0% 0% 2% 0%;
+}
+
+.principal__titulo {
+  color: var(--cor-escura);
+  text-align: center;
+  padding: 2%;
+}
+
+.principal__decodificador {
+  display: flex;
+  flex-direction: row;
+  height: 94%;
+  padding-left: 15%;
+  gap: 5%;
+}
+
+.principal__decodificador__secao__decodificacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.principal__decodificador__secao__decodificacao__texto__entrada {
+  height: 80%;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  font-family: var(--fonte);
+  font-size: larger;
+  resize: none;
+}
+
+.principal__decodificador__secao__decodificacao__texto__entrada::placeholder {
+  color: var(--cor-primaria);
+}
+
+.principal__decodificador__secao__decodificacao__alerta {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+.principal__decodificador__secao__decodificacao__alerta__texto {
+  font-size: small;
+}
+
+.principal__decodificador__secao__decodificacao__botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10%;
+  width: 100%;
+}
+
+.principal__decodificador__secao__decodificacao__botao {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-escura);
+  border-color: var(--cor-primaria);
+  border-style: solid;
+  border-radius: 24px;
+  border-width: 1px;
+  width: 45%;
+}
+
+.principal__decodificador__secao__decodificacao__botao:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  cursor: pointer;
+}
+
+.principal__decodificador__secao__decodificacao__botao:active {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+}
+
+.principal__decodificador__secao__traducao {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  height: 102%;
+  width: 40%;
+  background-color: var(--cor-clara);
+  border-radius: 24px;
+}
+
+/* .principal__decodificador__secao__traducao__texto__saida {
+  height: 80%;
+  width: 90%;
+} */
+
+.principal__decodificador__secao__traducao__imagem {
+  height: 50%;
+  width: 60%;
+}
+
+.principal__decodificador__secao__traducao__texto__alerta {
+  width: 60%;
+  text-align: center;
+  color: var(--cor-escura);
+}
+
+.principal__decodificador__secao__traducao__botao__copiar {
+  background-color: var(--cor-clara);
+  color: var(--cor-escura);
+  border-color: var(--cor-primaria);
+  border-style: solid;
+  border-radius: 24px;
+  border-width: 1px;
+  height: 10%;
+  width: 45%;
+  margin-bottom: 2%;
+}
+
+.principal__decodificador__secao__traducao__botao__copiar:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  cursor: pointer;
+}
+
+.rodape {
+  height: 2vh;
+}
