@@ -1,10 +1,27 @@
+let entrada = document.getElementById("entrada_decodificacao");
+let saida = document.getElementById("saida_decodificacao");
+let imagem = document.getElementById("secao_sem_texto");
+let botaoCopiar = document.getElementById("botao_copiar");
+
+imagem.style.display = "flex";
+saida.style.display = "none";
+botaoCopiar.style.display = "none";
+
 function limpaTudo() {
-  document.querySelector("#entrada_decodificacao").value = "";
-  document.querySelector("#saida_decodificacao").innerHTML = "";
+  entrada.value = "";
+  saida.innerHTML = "";
+  imagem.style.display = "flex";
+  saida.style.display = "none";
+  botaoCopiar.style.display = "none";
 }
 
 function criptografa() {
-  let textoEntrada = document.querySelector("#entrada_decodificacao").value;
+  imagem.style.display = "none";
+  saida.style.display = "flex";
+  saida.style.flexDirection = "column";
+  botaoCopiar.style.display = "block";
+
+  let textoEntrada = entrada.value;
   let textoSaida = [];
   for (let i in textoEntrada) {
     let letra = textoEntrada[i];
@@ -34,22 +51,26 @@ function criptografa() {
         break;
     }
   }
-  document.querySelector("#saida_decodificacao").innerHTML =
-    textoSaida.join("");
+  saida.innerHTML = textoSaida.join("");
 }
 
 function descriptografa() {
-  let textoEntrada = document.querySelector("#entrada_decodificacao").value;
+  imagem.style.display = "none";
+  saida.style.display = "flex";
+  saida.style.flexDirection = "column";
+  botaoCopiar.style.display = "block";
+
+  let textoEntrada = entrada.value;
   let textoSaida = textoEntrada.replaceAll("ai", "a");
   textoSaida = textoSaida.replaceAll("enter", "e");
   textoSaida = textoSaida.replaceAll("imes", "i");
   textoSaida = textoSaida.replaceAll("ober", "o");
   textoSaida = textoSaida.replaceAll("ufat", "u");
-  document.querySelector("#saida_decodificacao").innerHTML = textoSaida;
+  saida.innerHTML = textoSaida;
 }
 
 function copiaTexto() {
-  let textoCopiado = document.querySelector("#saida_decodificacao").innerHTML;
-  document.querySelector("#entrada_decodificacao").value = textoCopiado;
+  let textoCopiado = saida.innerHTML;
+  entrada.value = textoCopiado;
   navigator.clipboard.writeText(textoCopiado);
 }

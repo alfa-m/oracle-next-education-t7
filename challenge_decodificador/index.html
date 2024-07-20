@@ -58,16 +58,31 @@
           </div>
         </section>
         <section class="principal__decodificador__secao__traducao">
-          <!-- <img class="principal__decodificador__secao__traducao__imagem"
-            id="imagem_procurando_texto"
-            src="./assets/pessoa_com_lupa.svg"
-            alt="Pessoa segurando uma lupa e observando um diamante flutuando no ar"
-          />
-          <section class="principal__decodificador__secao__traducao__texto__alerta">
-            <p class="principal__decodificador__secao__traducao__texto__alerta__titulo"></p><strong>Nenhuma mensagem encontrada</strong></p>
-            <p class="principal__decodificador__secao__traducao__texto__alerta__texto">
-            Digite um texto que você deseja criptografar ou descriptografar.
-          </p></section> -->
+          <section
+            class="principal__decodificador__secao__traducao__sem__texto"
+            id="secao_sem_texto"
+          >
+            <img
+              class="principal__decodificador__secao__traducao__imagem"
+              id="imagem_procurando_texto"
+              src="./assets/pessoa_com_lupa.svg"
+              alt="Pessoa segurando uma lupa e observando um diamante flutuando no ar"
+            />
+            <section
+              class="principal__decodificador__secao__traducao__texto__alerta"
+            >
+              <p
+                class="principal__decodificador__secao__traducao__texto__alerta__titulo"
+              >
+                <strong>Nenhuma mensagem encontrada</strong>
+              </p>
+              <p
+                class="principal__decodificador__secao__traducao__texto__alerta__texto"
+              >
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </section>
+          </section>
           <p
             class="principal__decodificador__secao__traducao__texto__saida"
             id="saida_decodificacao"
@@ -84,7 +99,10 @@
     </main>
 
     <footer class="rodape">
-      <p class="rodape__texto">Criado por Alfa Marine - 2024.</p>
+      <a href="https://github.com/alfa-m" class="rodape__link" target="_blank">
+        <img src="assets/icone_github.svg" />
+        <p class="rodape__texto">Criado por Alfa Marine 2024</p></a
+      >
     </footer>
     <script src="scripts/app.js" defer></script>
   </body>
