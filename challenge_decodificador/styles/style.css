@@ -129,16 +129,6 @@ body {
   border-radius: 24px;
 }
 
-.principal__decodificador__secao__traducao__texto__saida {
-  height: 78%;
-  width: 90%;
-  font-size: 1.5rem;
-  margin: 3%;
-  overflow-wrap: break-word;
-  overflow-y: scroll;
-  resize: none;
-}
-
 .principal__decodificador__secao__traducao__imagem {
   height: 40%;
 }
@@ -158,6 +148,16 @@ body {
 
 .principal__decodificador__secao__traducao__texto__alerta__texto {
   font-size: 1rem;
+}
+
+.principal__decodificador__secao__traducao__texto__saida {
+  height: 78%;
+  width: 90%;
+  font-size: 1.5rem;
+  margin: 3%;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  resize: none;
 }
 
 .principal__decodificador__secao__traducao__botao__copiar {
