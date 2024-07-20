@@ -1,3 +1,8 @@
+function limpaTudo() {
+  document.querySelector("#entrada_decodificacao").value = "";
+  document.querySelector("#saida_decodificacao").innerHTML = "";
+}
+
 function criptografa() {
   let textoEntrada = document.querySelector("#entrada_decodificacao").value;
   let textoSaida = [];

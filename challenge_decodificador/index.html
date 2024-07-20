@@ -16,6 +16,12 @@
       </h1>
       <section class="principal__decodificador">
         <section class="principal__decodificador__secao__decodificacao">
+          <img
+            id="botao_reload"
+            onclick="limpaTudo()"
+            class="principal__decodificador__icone__reload"
+            src="assets/icone_reload.svg"
+          />
           <textarea
             class="principal__decodificador__secao__decodificacao__texto__entrada"
             id="entrada_decodificacao"
@@ -52,8 +58,11 @@
           </div>
         </section>
         <section class="principal__decodificador__secao__traducao">
-          <p class="principal__decodificador__secao__traducao__texto__saida" id="saida_decodificacao"></p>
-          <img class="principal__decodificador__secao__traducao__imagem"
+          <p
+            class="principal__decodificador__secao__traducao__texto__saida"
+            id="saida_decodificacao"
+          ></p>
+          <!-- <img class="principal__decodificador__secao__traducao__imagem"
             id="imagem_procurando_texto"
             src="./assets/pessoa_com_lupa.svg"
             alt="Pessoa segurando uma lupa e observando um diamante flutuando no ar"
@@ -62,16 +71,22 @@
             <p class="principal__decodificador__secao__traducao__texto__alerta__titulo"></p><strong>Nenhuma mensagem encontrada</strong></p>
             <p class="principal__decodificador__secao__traducao__texto__alerta__texto">
             Digite um texto que você deseja criptografar ou descriptografar.
-          </p></section>
+          </p></section> -->
 
-          <button class="principal__decodificador__secao__traducao__botao__copiar" id="botao_copiar" onclick="copiaTexto()">Copiar</button>
+          <button
+            class="principal__decodificador__secao__traducao__botao__copiar"
+            id="botao_copiar"
+            onclick="copiaTexto()"
+          >
+            Copiar
+          </button>
         </section>
       </section>
     </main>
 
-    <!-- <footer class="rodape">
-      <p>Criado por Alfa Marine - 2024.</p>
-    </footer> -->
+    <footer class="rodape">
+      <p class="rodape__texto">Criado por Alfa Marine - 2024.</p>
+    </footer>
     <script src="scripts/app.js" defer></script>
   </body>
 </html>
