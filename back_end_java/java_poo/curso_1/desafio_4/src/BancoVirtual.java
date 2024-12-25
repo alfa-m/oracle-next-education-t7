@@ -17,7 +17,7 @@ public class BancoVirtual {
         System.out.println("\nQual o saldo inicial do cliente?:");
         saldo = leTeclado.nextDouble();
 
-        String telaInicial = """                
+        String telaMenu = """                
                 Operações
                 
                 1 - Consultar saldo
@@ -41,7 +41,7 @@ public class BancoVirtual {
                 **********************************************************************
                 """.formatted(nomeCliente, tipoConta, saldo);
             System.out.println(dadosUsuario);
-            System.out.println(telaInicial);
+            System.out.println(telaMenu);
 
             opcao = leTeclado.nextInt();
 
