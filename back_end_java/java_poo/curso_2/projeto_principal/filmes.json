@@ -1,0 +1,34 @@
+[
+  {
+    "Nome": "Matrix",
+    "AnoDeLancamento": 1993,
+    "IncluidoNoPlano": false,
+    "AvaliacaoTotal": 0.0,
+    "QuantidadeDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 60
+  },
+  {
+    "Nome": "Dogville",
+    "AnoDeLancamento": 2003,
+    "IncluidoNoPlano": false,
+    "AvaliacaoTotal": 0.0,
+    "QuantidadeDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 17
+  },
+  {
+    "Nome": "Tron",
+    "AnoDeLancamento": 1982,
+    "IncluidoNoPlano": false,
+    "AvaliacaoTotal": 0.0,
+    "QuantidadeDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 96
+  },
+  {
+    "Nome": "The Godfather",
+    "AnoDeLancamento": 1972,
+    "IncluidoNoPlano": false,
+    "AvaliacaoTotal": 0.0,
+    "QuantidadeDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 17
+  }
+]

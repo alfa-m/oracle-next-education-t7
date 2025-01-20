@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_1/desafio_1.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_1/desafio_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_2/desafio_1/desafio_11.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_2/desafio_1/desafio_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_2/desafio_2.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_2/desafio_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_3/desafio_3.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_3/desafio_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_4/desafio_4.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/desafio_4/desafio_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/exemplos/exemplos.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/exemplos/exemplos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/oracle-next-education-t7.iml" filepath="$PROJECT_DIR$/.idea/oracle-next-education-t7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_1/projeto_principal/projeto_principal.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_1/projeto_principal/projeto_principal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back_end_java/java_poo/curso_2/projeto_principal/projeto_principal1.iml" filepath="$PROJECT_DIR$/back_end_java/java_poo/curso_2/projeto_principal/projeto_principal1.iml" />
+    </modules>
+  </component>
+</project>
