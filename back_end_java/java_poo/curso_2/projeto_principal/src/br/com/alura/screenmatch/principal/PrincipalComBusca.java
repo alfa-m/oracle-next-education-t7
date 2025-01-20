@@ -60,11 +60,11 @@ public class PrincipalComBusca {
                 //Titulo tituloJson = gson.fromJson(response.body(), Titulo.class);
                 TituloOmdb tituloOmdbJson = gsonOmdb.fromJson(response.body(), TituloOmdb.class);
                 //System.out.println(tituloJson);
-                System.out.println("Escolha do usuária convertida em TituloOmdb: ");
+                System.out.println("Escolha do usuário convertida em TituloOmdb: ");
                 System.out.println(tituloOmdbJson);
 
                 Titulo meuTitulo = new Titulo(tituloOmdbJson);
-                System.out.println("Escolha do usuária convertida em Titulo: ");
+                System.out.println("Escolha do usuário convertida em Titulo: ");
                 System.out.println(meuTitulo);
                 titulos.add(meuTitulo);
 
